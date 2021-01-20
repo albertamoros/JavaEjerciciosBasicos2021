@@ -41,7 +41,16 @@ public class EjerciciosBasicosJava {
         //en cualquie otro valor devolvemos multa grande
         return 2;
     }
-    
+    /**
+     * @param numero el numero a evaluar si es o no validoso. es validoso si es multiplo de 11 o uno mas
+     * de un multiplo de 11
+    */
+    public boolean muyVanidoso (int numero){
+        if (numero % 11 < 2 ){ //si la division da 0 devuelve 0
+            return true;
+        }
+        return false;
+    }
     
     /**
      * @param args the command line arguments
@@ -63,7 +72,10 @@ public class EjerciciosBasicosJava {
         System.out.println(ejercicio.multa(65, false) );
         System.out.println(ejercicio.multa(65, true) );
         
-        
+        System.out.println("ejercicio03 vanidoso");
+        System.out.println(ejercicio.muyVanidoso(22) );
+        System.out.println(ejercicio.muyVanidoso(23) );
+        System.out.println(ejercicio.muyVanidoso(24) );
         
     }
     
