@@ -89,7 +89,12 @@ public class EjerciciosBasicosJava {
     }
     
     public boolean digitoIgual (int numero1, int numero2){
-        
+        if(numero1/10 == numero2/10 || numero1%10 == numero2%10){
+            return true;
+        }
+        if(numero1/10 == numero2%10 || numero1%10 == numero2/10){
+            return true;
+        }
         return false;
     }
     
